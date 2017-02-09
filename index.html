@@ -3,9 +3,79 @@
        <head>
                <meta charset="UTF8">
                <meta name="viewport" content="width=device-width, initial-scale=1">
-               <title>HELLO WORLD!</title>
+               <title>WWE Service</title>
         </head>
         <body>
-                <h1>Hello World! On the Page!</h1>
+
+		<header class="page-header">
+                <h1>WWE Service</h1>
+		</header>
+
+	<section>
+
+                <form action="" method="post">
+			<h2>Submit a new ticket</h2>
+			<p><small>Do it for a shot at the World Championship</small></p>
+
+				<div class="form-group">
+				        <label for="name">Your Name</label>
+				        <input type="text" name="name" id="name" required>
+				</div>
+
+				<div class="form-group">
+				        <label for="department">Department</label>
+				        <select name="department" id="department" required>
+						<option value="">Please choose a department</option>
+						<option value="accounts">Accounts</option>
+						<option value="sales">Sales</option>
+						<option value="it">IT</option>
+						<option value="hr">Human Resources</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+				        <label for="email">Your Email</label>
+				        <input type="email" name="email" id="email" required>
+				</div>
+				<div class="form-group">
+				        <label for="telephone">Your Telephone Number (or extension)</label>
+				        <input type="telephone" name="telephone"" id="telephone"">
+				</div>
+
+				<div class="form-group">
+				        <label for="priority">Ticket Priority</label>
+				        <select name="priority" id="priority"  required>
+						<option value="">Please select the importance of your problem</option>
+						<option value="annoyance">Important</option>
+						<option value="trivial">Priority</option>
+						<option value="dont-worry">Critical</option>
+						<option value="overblown">Immediate fix required - business interrupted</option>
+						<option value="potential-issue">I think I will actually die as a direct result of this issue</option>					
+					</select>
+				</div>
+
+				<div class="form-group">
+				        <label for="details">Details of your issue</label>
+				        <label for="details">Please be as descriptive as you can, include as many technical details as possible.</label>
+				        <textarea name="details" id="details" required></textarea>
+				</div>
+
+				<div class="form-group">
+					<input type="submit" value ="Report Issue">
+				</div>
+                </form>
+
+	</section>
+
+			<section>
+				<h2>Existing Tickets</h2>
+				<ul class="ticket-list">
+					<li class="ticket-list__item"><strong>Conor Atkins</strong> - Help!?!</li>
+					<li class="ticket-list__item"><strong>The Corpirate</strong> - You can't beat Wall Street</li>
+					<li class="ticket-list__item"><strong>Randy Orten</strong> - RKO out of nowhere</li>
+					<li class="ticket-list__item"><strong>Hulk Hogan</strong> - Everyones a Hulkamaniac Brother!</li>
+					<li class="ticket-list__item"><strong>John Cena</strong> - And his name is....</li>
+				</ul>
+			</section>
         </body>
 </html>
